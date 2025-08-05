@@ -20,8 +20,8 @@ resource "aws_iam_role" "stepfn_role" {
 module "hello_world_stepfunction" {
   source              = "./modules/stpfnc"
   name                = "hello-world-stepfunction"
-  role_arn            = module.aws_iam_role.stepfn_role
+  role_arn            = module.aws_iam_role.stepfn_role.arn
   # log_group_arn       = aws_cloudwatch_log_group.stepfn_logs.arn
-  definition_file_path = "../statemachines/sample_hello_world.json"
+  definition_file_path = "statemachines/sample_hello_world.json"
 }
 
