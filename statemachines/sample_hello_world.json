@@ -1,0 +1,12 @@
+{
+  "Comment": "Hello World example",
+  "StartAt": "Hello",
+  "States": {
+    "Hello": {
+      "Type": "Pass",
+      "Result": "Hello, World!",
+      "End": true
+    }
+  }
+}
+
