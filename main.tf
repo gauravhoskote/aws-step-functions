@@ -1,8 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
-
 # resource "aws_cloudwatch_log_group" "stepfn_logs" {
 #   name              = "/aws/stepfunctions/example"
 #   retention_in_days = 7
