@@ -11,3 +11,7 @@ variable "definition_file_path" {
   description = "Relative path from root to the Step Function JSON definition file"
 }
 
+variable "stepfunc_type"{
+  type        = string
+  description = "Type of Step Function - STANDARD or EXPRESS"
+}

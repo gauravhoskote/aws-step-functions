@@ -21,6 +21,7 @@
 #   source              = "./modules/stpfnc"
 #   name                = "hello-world-stepfunction"
 #   role_arn            = aws_iam_role.stepfn_role.arn
+#   stepfunc_type       = "STANDARD"
 #   # log_group_arn       = aws_cloudwatch_log_group.stepfn_logs.arn
 #   definition_file_path = "statemachines/sample_hello_world.json"
 # }
